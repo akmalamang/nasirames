@@ -1,0 +1,603 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgrey;
+}
+.container{
+    padding: .2em;
+    overflow: hidden;
+    padding-bottom: 0;
+
+}
+/* awal bck-img*/
+.bck-img{
+    background-image: url(../picture/ss.png);
+    background-size: cover ;
+    object-fit: cover;
+    object-position: 100% 100%;   
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    top: 20px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.nav-1{
+    color: rgb(0, 0, 0);
+    justify-self: flex-start;
+    margin-left: 2em;
+}
+ .nav-1 h1{
+    font-size: calc(3vw + 5%);
+}
+.nav-1 .narmes{
+    color: rgb(255, 255, 255);
+}
+.nav-2{
+    justify-self: flex-end;
+    margin-right: 2.5em;
+}
+.item ul{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   list-style: none;
+   gap: 2em;
+}
+.item ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.item ul li a:hover{
+    color: darkorange;
+    text-shadow: 1px 3px 3px rgba(255, 255, 255, 0.9);
+}
+.item ul .log{
+    color:  rgb(255, 255, 255);
+    padding: .5em;
+    background-color:rgb(0, 0, 0) ;
+}
+.item ul .log:hover{
+    color: darkorange;
+}
+
+/* awal  isi */
+
+.isi{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    position: relative;
+    width: 50%;
+    margin-top: 10em;
+    margin-left: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.isi .wel{
+    font-weight: 100;
+}
+.isi .h2{
+    color: white;
+    text-transform: capitalize;
+}
+.isi .h2 .es{
+    font-size: 3rem;
+    color:rgb(0, 0, 0) ;
+}
+.h2 .es .wrng{
+    color: rgb(255, 255, 255);
+}
+.isi .prgf{
+    font-size: 20px;
+    text-indent: 2px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+/*akhir isi*/
+/* awal daftar menu*/
+.daftar-menu{
+    text-align: center;
+    background-color: rgb(202, 204, 204);
+    width: max-content;
+    margin: auto;
+    z-index: 1;
+    position: absolute;
+    padding: .5em;
+    border-radius: 10px ;
+    left: 25%;
+    right: 30%;
+    top: 780px;
+    
+ 
+}
+/* akhir daftar menu
+
+/* awal menu */ 
+    .menu{
+        margin-top: 3px;
+        background-image: linear-gradient( rgba(104, 103, 103, 0.86),rgba(26, 26, 26, 0.966));
+        height: max-content;
+        padding: 1em;
+        padding-bottom: 2em;
+        position: relative;
+    }
+     .jdl-nasi h1{
+        color: white;
+        margin-left: 1em;
+        position: relative;
+        top: 20px;
+        
+    }
+    .gambar-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        justify-items: center;
+        gap: .5em;
+    }
+    .gambar {
+        margin-top: 2em;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 1em;
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        transition: .3s;
+    }
+    .gambar:hover{
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px);
+    }
+    .raiting{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        margin-top: .5em;
+    }
+    .raiting img{
+        width: 25px;
+        height: 25px;
+    }
+    .raiting p{
+        color: white;
+    }
+     .img img{
+        background-image: url(../picture/nasi3k.jpg);
+        background-repeat: no-repeat;
+        background-position: 40%;
+        background-size: cover;
+        object-fit: cover;
+        width: 200px;
+        height: 150px;
+        
+    }
+    
+    .nasi{
+        font-weight: bold;
+    }
+    .nasi p {
+        margin-left: 5px;
+    }
+    .harga{
+        position: relative;
+        top: -10px;
+        font-weight: 500;
+    }
+    .harga p{
+        margin-left: 5px;
+    }
+    .belanja{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+       
+    }
+    .shop{
+        margin-left: 5px;
+    }
+    .shop img{
+        cursor: pointer;
+    }
+/* akhir */
+
+/* awal sideDish */ 
+
+    .sideDish-h1 {
+        color: white;
+        margin-top: 1em;
+        margin-left: 1em;
+        text-transform: capitalize;
+    }
+/*akhir sideDish*/
+
+/* awal history */
+    .history {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        height: max-content;
+        background-color: rgba(68, 66, 51, 1);
+        justify-items: center;
+        align-items: center;
+        padding: 2.5em;
+        gap: .9em;
+    }
+    .history .con img {
+       width: calc(20vw - 1em);
+    }
+    .paragraf{
+        padding: 1em;
+        background-color: rgb(116, 113, 91 ) ;
+        border-radius: 10px;   
+        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
+    }
+    .paragraf p {
+        padding: 3em;
+       
+        
+    } 
+    .history .con {
+        padding: 3.5em;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color:   rgb(116, 113, 91);
+        transition: .4s;
+    }
+    .history .con:hover{
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4) ;
+        transform: translateY(-7px);
+    }
+
+/*akhir history */
+
+/*awal form */ 
+.form {
+    height: 700px;
+    background-image: linear-gradient(rgba(53, 53, 53, 1),rgba(206, 217, 207, 0.1563),rgba(255, 255, 252, 0.46));
+    position: relative;
+    width: 100%;
+    
+}
+.form-kotak{
+    width: 70%;
+    height: 300px;
+    background-color: rgba(100, 106, 97, 1);
+    margin: auto;
+    top: 10%;
+    position: relative;
+    height: 80%;
+    border-radius: 20px;
+}
+.kotak-item{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 3em;
+    width: 90%;
+    margin: 2.5em auto;
+}
+.item-agg{
+    display: flex;
+    gap: .9em;
+    flex-direction: column;
+    margin: .1em auto;
+    width: calc(30vw + 5%);
+}.item-agg input{
+    padding: .8em;
+    height: 3.5em;
+    border-radius: 10px;
+}
+.item-agg label{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    
+}
+.kotak-h1{
+    text-align: center;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 2%;
+}
+/* akhir form*/
+/* awal login */
+.login-login-tag{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+}
+    .login{
+       align-items: center;
+    }
+   
+    .login button{
+        padding: 1em;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .login button:hover{
+        background-color: rgb(34, 33, 33);
+        color: white;
+    }
+    .login-tag{
+        color: white;
+        font-size: 20px;
+    }
+    .login-tag p span a{
+        color: black;
+        text-decoration: none;
+    }
+    .login-tag p span a:hover{
+        opacity: .8;
+    }
+/* akhir login */
+/* awal about & contact */
+    .about-contact{
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: max-content;
+        background: #3D483A;
+        padding: 4em;
+        padding-bottom: 5em;
+      
+    }
+    .contact-one{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 3em;
+        top: 5%;
+        margin-bottom: 8em;
+        position: relative;
+
+    }
+    .c-h1{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-left: 1em;
+    }
+    .c-h1 p {
+        color: darkgray;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    .c-h1 p a{
+        text-decoration: none;
+        color: darkgray;
+    }
+    /* .c-h1 .papa:hover{
+        cursor: pointer;
+    } */
+    .capitalize{
+        text-transform: capitalize;
+    }
+    .garis-p {
+        height: 2px;
+        background-color: darkgray;
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        bottom: 25%;
+        
+        
+    }
+/*akhir about dan contact */
+
+/*social-media*/
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+        position: absolute;
+        bottom: 7%;
+        left: 0;
+        right:0;
+        margin-bottom: .3em;
+    }
+    .sat img:hover{
+        opacity: 1;
+        transition: .4s;
+    }
+    .sat img:hover{
+        opacity: .7;
+    }
+    .g-s-m{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0%;
+        bottom: 5%;
+       
+    }
+    .footer{
+        position: absolute ;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        text-align: center;       
+       
+    }
+    .footer p a{
+        text-decoration: none;
+        color: darkgray;
+        transition: .4s;
+    }
+    .footer p a:hover{
+        color: black;
+    }
+/*akhir social-media*/
+
+/* clas javascript hv */
+
+/*akhir kelas javacript hv  */
+
+
+/* versi mobile */ 
+@media screen and (max-width:776px){
+    .garis-p{
+        bottom: 18%;
+    }
+}
+@media screen and (max-width:600px) {
+        .nav{
+            display: block;
+            
+        }
+        .item{   
+        display: none;
+        transition: .3s;
+            position: absolute;
+            z-index: 5;
+          
+        }
+        .item.tambah {
+            display: flex;
+            
+        }
+        .daftar-menu.opa{
+         position: static;
+        }
+        .item ul li{
+            margin-top: .9em;
+        }
+        .item ul{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: fixed;
+            background-color: rgb(235, 235, 235);
+            opacity: .8;
+            gap: 3.3em;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            color: black;
+        }
+        
+        .item ul li a{
+            color: black;
+        }
+        .nav-1{
+            margin-left: 1em;
+        }
+        .nav-1 h1{
+            font-size: calc(7vw + 1%);
+        }
+        .prgf p{
+            font-size: calc(4vw + 2%);
+        }
+        .isi {
+            width: 100%;
+            position: static;
+            margin-left: 0;
+        }
+        .isi .h2{
+           margin-left: 1.3em;
+            
+        }
+        .isi .h2 .ya {
+            font-size: calc(5vw - 5%);
+        }
+        .isi .h2 .es{ 
+            font-size: calc(9vw - 5px);
+        }
+        .isi .prgf{
+            margin-left: 1.3em;
+        }
+        
+        /* awal span */
+        .con-span{
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        gap: 3px;
+        position: fixed;
+        right: 0;
+        top: 20px;
+        margin-right: 1em;
+        cursor: pointer;
+
+        }
+        .span {
+        width: 25px;
+        height: 5px;
+        background-color: rgb(255, 255, 255);
+        transition: .2s;
+       
+        }
+        .sp1.up{
+            transform: rotate(45deg) translateX(5px);
+        }
+        .sp3.down{
+            transform: rotate(-45deg) translateX(11px) translateY(-7px);
+        }
+        .sp2.none {
+            transform: scale(0);
+        }
+        /*akhir span*/
+        .history .con {
+            padding: .5em;
+        }
+        .history .con img {
+            width: calc(150px );
+         }
+         .paragraf p {
+            padding: 1.5em; 
+        } 
+        .form-kotak{
+            width: 90%;
+            margin: auto;
+        }
+        .item-agg{
+            width: 90%;
+        }
+        .login{
+            left: 41%;
+            right: 40%;
+        }
+        /* .contact-one{
+            left: 0;
+            right: 0;
+        } */
+        .about-contact{
+            padding: 1.5em;
+        }
+        .social-media{
+            bottom: 2%;
+        }
+        .garis-p{
+            bottom: 10.2%;
+        }
+        
+
+}
+/*akhir versi mobile */
